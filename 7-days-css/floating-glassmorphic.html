@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+   @keyframes float {
+    0% {
+      transform: translateY(-10px); /* Start slightly lifted */
+    }
+    50% {
+      transform: translateY(10px); /* Move slightly down */
+    }
+    100% {
+      transform: translateY(-10px); /* Back to the original position */
+    }
+  }
+.glass {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Floating effect */
+     animation: float 8s ease-in-out infinite; /* Apply floating animation */
+    border-radius: 15px;
+     background: rgba(200, 200, 200, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+  }
+ body {
+ background: rgb(2, 129, 131 ); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="glass"><h3>Glassmorphic effect</h3>
+    <p> To use this effect check out my github link!</p>
+  </div>
+</body>
+</html>
