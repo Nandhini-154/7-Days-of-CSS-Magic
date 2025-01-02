@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background: #141e30; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .shimmer {
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #ff8a00, #e52e71, #9b00ff, #ff8a00);
+      background-size: 200%;
+      background-clip: text;
+      color: transparent; 
+      animation: shimmer-animation 3s infinite;
+    }
+
+    @keyframes shimmer-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shimmer">Shimmering Text</div>
+</body>
+</html>
